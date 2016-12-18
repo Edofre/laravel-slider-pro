@@ -29,7 +29,6 @@ class Caption extends \Edofre\SliderPro\Models\SliderProModel
             $this->htmlOptions['class'] = self::CAPTION_CLASS;
         }
 
-
         //return \yii\bootstrap\Html::tag($this->tag, $this->content, $this->htmlOptions);
     }
 }
