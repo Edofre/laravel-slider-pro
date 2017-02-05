@@ -1,5 +1,11 @@
 # Laravel slider-pro widget
 
+[![Latest Stable Version](https://poser.pugx.org/edofre/laravel-slider-pro/v/stable)](https://packagist.org/packages/edofre/laravel-slider-pro)
+[![Total Downloads](https://poser.pugx.org/edofre/laravel-slider-pro/downloads)](https://packagist.org/packages/edofre/laravel-slider-pro)
+[![Latest Unstable Version](https://poser.pugx.org/edofre/laravel-slider-pro/v/unstable)](https://packagist.org/packages/edofre/laravel-slider-pro)
+[![License](https://poser.pugx.org/edofre/laravel-slider-pro/license)](https://packagist.org/packages/edofre/laravel-slider-pro)
+[![composer.lock](https://poser.pugx.org/edofre/laravel-slider-pro/composerlock)](https://packagist.org/packages/edofre/laravel-slider-pro)
+
 ## Installation
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
