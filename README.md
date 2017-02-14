@@ -24,6 +24,18 @@ or add
 
 to the ```require``` section of your `composer.json` file.
 
+### Note 
+The fxp/composer-asset plugin is required for this package to install properly.
+This plugin enables you to download bower packages through composer.
+
+You can install it using this command:
+```
+composer global require "fxp/composer-asset-plugin:^1.2.0”
+```
+
+This will add the fxp composer-asset-plugin and your composer will be able to find and download the required bower-asset/slider-pro package.
+You can find more info on this page: [https://packagist.org/packages/fxp/composer-asset-plugin](https://packagist.org/packages/fxp/composer-asset-plugin).
+
 ## Usage 
 
 Not all available modules are available as objects, these will be implemented at a later date, 
