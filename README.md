@@ -68,6 +68,7 @@ The following 2 ways are available to instantiate the slider:
 
 ### 1. You can use either the supplied php classes to generate the HTML
 
+#### WIP
 ```php
 use Edofre\SliderPro\Models\Slide;
 use Edofre\SliderPro\Models\Slides\Caption;
@@ -139,65 +140,67 @@ $thumbnails = [
 ### 2. Or you can create your own HTML code to generate the slider
 
 ```php
-<?= \Edofre\SliderPro\SliderPro::generate([
-	'id'            => 'my-slider',
-	'sliderOptions' => [
-		'width'  => 960,
-		'height' => 500,
-		'arrows' => true,
-		'init'   => new \yii\web\JsExpression("
-			function() {
-				console.log('slider is initialized');
-			}
-		"),
-	],
-]);
-?>
+<?php
+$slider = new SliderPro();
+$slider->setId('my-slider');
+$slider->setOptions([
+        'sliderOptions' => [
+                'width'  => 960,
+                'height' => 500,
+                'arrows' => true,
+                'init'   => ("
+            function() {
+                console.log('slider is initialized');
+            }
+        "),
+        ]
+]); ?>
 
 <div class="slider-pro" id="my-slider">
-	<div class="sp-slides">
-		<!-- Slide 1 -->
-		<div class="sp-slide">
-			<img class="sp-image" src="http://lorempixel.com/960/500/sports/1"/>
-		</div>
-		<!-- Slide 2 -->
-		<div class="sp-slide">
-			<img class="sp-image" src="http://lorempixel.com/960/500/sports/2"/>
-			<p class="sp-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		</div>
-		<!-- Slide 3 -->
-		<div class="sp-slide">
-			<p>Lorem ipsum dolor sit amet</p>
-		</div>
-		<!-- Slide 4 -->
-		<div class="sp-slide">
-			<img class="sp-image" src="http://lorempixel.com/960/500/sports/3"/>
-			<h3 class="sp-layer sp-black"
-				data-position="bottomLeft" data-horizontal="10%"
-				data-show-transition="left" data-show-delay="300" data-hide-transition="right">
-				Lorem ipsum dolor sit amet
-			</h3>
-			<p class="sp-layer sp-white sp-padding"
-			   data-width="200" data-horizontal="center" data-vertical="40%"
-			   data-show-transition="down" data-hide-transition="up">
-				consectetur adipisicing elit
-			</p>
-			<div class="sp-layer sp-static">Static content</div>
-		</div>
-		<!-- Slide 5 -->
-		<div class="sp-slide">
-			<h3 class="sp-layer">Lorem ipsum dolor sit amet</h3>
-			<p class="sp-layer">consectetur adipisicing elit</p>
-		</div>
+    <div class="sp-slides">
+        <!-- Slide 1 -->
+        <div class="sp-slide">
+            <img class="sp-image" src="http://lorempixel.com/960/500/sports/1"/>
+        </div>
+        <!-- Slide 2 -->
+        <div class="sp-slide">
+            <img class="sp-image" src="http://lorempixel.com/960/500/sports/2"/>
+            <p class="sp-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <!-- Slide 3 -->
+        <div class="sp-slide">
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <!-- Slide 4 -->
+        <div class="sp-slide">
+            <img class="sp-image" src="http://lorempixel.com/960/500/sports/3"/>
+            <h3 class="sp-layer sp-black"
+                data-position="bottomLeft" data-horizontal="10%"
+                data-show-transition="left" data-show-delay="300" data-hide-transition="right">
+                Lorem ipsum dolor sit amet
+            </h3>
+            <p class="sp-layer sp-white sp-padding"
+               data-width="200" data-horizontal="center" data-vertical="40%"
+               data-show-transition="down" data-hide-transition="up">
+                consectetur adipisicing elit
+            </p>
+            <div class="sp-layer sp-static">Static content</div>
+        </div>
+        <!-- Slide 5 -->
+        <div class="sp-slide">
+            <h3 class="sp-layer">Lorem ipsum dolor sit amet</h3>
+            <p class="sp-layer">consectetur adipisicing elit</p>
+        </div>
 
-		<!-- thumbnails -->
-		<div class="sp-thumbnails">
-			<img class="sp-thumbnail" src="http://lorempixel.com/960/500/sports/1" data-src="http://lorempixel.com/480/250/sports/1"/>
-			<img class="sp-thumbnail" src="http://lorempixel.com/960/500/sports/2" data-src="http://lorempixel.com/480/250/sports/2"/>
-			<img class="sp-thumbnail" src="http://lorempixel.com/960/500/sports/3" data-src="http://lorempixel.com/480/250/sports/3"/>
-			<p class="sp-thumbnail">Thumbnail 4</p>
-			<p class="sp-thumbnail">Thumbnail 5</p>
-		</div>
-	</div>
+        <!-- thumbnails -->
+        <div class="sp-thumbnails">
+            <img class="sp-thumbnail" src="http://lorempixel.com/960/500/sports/1" data-src="http://lorempixel.com/480/250/sports/1"/>
+            <img class="sp-thumbnail" src="http://lorempixel.com/960/500/sports/2" data-src="http://lorempixel.com/480/250/sports/2"/>
+            <img class="sp-thumbnail" src="http://lorempixel.com/960/500/sports/3" data-src="http://lorempixel.com/480/250/sports/3"/>
+            <p class="sp-thumbnail">Thumbnail 4</p>
+            <p class="sp-thumbnail">Thumbnail 5</p>
+        </div>
+    </div>
 </div>
+<?= $slider->generate(); ?>
 ```
