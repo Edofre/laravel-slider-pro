@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "53ef1670df5de54aa0008326ea55051f",
+    "content-hash": "7ac97228a1f2958269d3d56e0b6474d3",
     "packages": [
         {
             "name": "bower-asset/slider-pro",
