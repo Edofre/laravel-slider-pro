@@ -18,11 +18,15 @@ class SliderPro
     public $thumbnails = [];
 
     /**
+     * @param bool $render_div
      * @return string
      */
-    public function generate()
+    public function generate($render_div = true)
     {
-        return $this->sliderPro() . $this->script();
+        if ($render_div) {
+            return $this->sliderPro() . $this->script();
+        }
+        return $this->script();
     }
 
     /**
