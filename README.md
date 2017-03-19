@@ -36,6 +36,29 @@ composer global require "fxp/composer-asset-plugin:^1.2.0”
 This will add the fxp composer-asset-plugin and your composer will be able to find and download the required bower-asset/slider-pro package.
 You can find more info on this page: [https://packagist.org/packages/fxp/composer-asset-plugin](https://packagist.org/packages/fxp/composer-asset-plugin).
 
+## Configuration
+Add the ServiceProvider to your config/app.php
+```php
+'providers' => [
+        ...
+        Edofre\SliderPro\SliderProServiceProvider::class,
+    ],
+```
+
+And add the facade
+```php
+'aliases' => [
+        ...
+        'SliderPro' => Edofre\SliderPro\Facades\SliderPro::class,
+    ],
+```
+
+### Publish assets
+Publish the assets
+```
+php artisan vendor:publish --tag=slider-\pro
+```
+
 ## Usage 
 
 Not all available modules are available as objects, these will be implemented at a later date, 
