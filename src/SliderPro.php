@@ -18,15 +18,7 @@ class SliderPro
     public $slides = [];
     /** @var array */
     public $thumbnails = [];
-
-    /**
-     * @param Factory $view
-     */
-    public function __construct(Factory $view)
-    {
-        $this->view = $view;
-    }
-
+    
     /**
      * @return string
      */
@@ -41,7 +33,7 @@ class SliderPro
      */
     private function script()
     {
-        return $this->view->make('slider-pro::script', [
+        return view('slider-pro::script', [
             'id'      => $this->getId(),
             'options' => $this->getOptionsJson(),
         ]);
