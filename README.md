@@ -202,5 +202,5 @@ $slider->setOptions([
         </div>
     </div>
 </div>
-<?= $slider->generate(); ?>
+<?= $slider->generate(false); // Specify false so we don't generate a new <div> ?>
 ```
