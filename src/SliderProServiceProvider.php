@@ -36,8 +36,8 @@ class SliderProServiceProvider extends ServiceProvider
         // publish all the required files to generate the slider
         $this->publishes([
             // fullcalendar library
-            __DIR__ . '/../../../bower-asset/slider-pro/dist/css/slider-pro.css'     => public_path('css/slider-pro.css'),
-            __DIR__ . '/../../../bower-asset/slider-pro/dist/js/jquery.sliderPro.js' => public_path('js/slider-pro.js'),
+            __DIR__ . '/../../../npm-asset/slider-pro/dist/css/slider-pro.css'     => public_path('css/slider-pro.css'),
+            __DIR__ . '/../../../npm-asset/slider-pro/dist/js/jquery.sliderPro.js' => public_path('js/slider-pro.js'),
         ], 'slider-pro');
     }
 
