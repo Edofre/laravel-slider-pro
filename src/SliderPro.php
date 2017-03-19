@@ -22,19 +22,16 @@ class SliderPro
      */
     public function generate()
     {
-        return $this->script();
+        return $this->sliderPro() . $this->script();
     }
 
     /**
-     * Get the <script> block to render the calendar
-     * @return \Illuminate\View\View
+     * Create the <div> the slider will be rendered into
+     * @return string
      */
-    private function script()
+    private function sliderPro()
     {
-        return view('slider-pro::script', [
-            'id'      => $this->getId(),
-            'options' => $this->getOptionsJson(),
-        ]);
+        return "<div id='" . $this->getId() . "'></div>";
     }
 
     /**
@@ -51,6 +48,18 @@ class SliderPro
     public function setId($id)
     {
         $this->id = $id;
+    }
+
+    /**
+     * Get the <script> block to render the calendar
+     * @return \Illuminate\View\View
+     */
+    private function script()
+    {
+        return view('slider-pro::script', [
+            'id'      => $this->getId(),
+            'options' => $this->getOptionsJson(),
+        ]);
     }
 
     /**
