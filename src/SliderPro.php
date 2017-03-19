@@ -2,8 +2,6 @@
 
 namespace Edofre\SliderPro;
 
-use Illuminate\View\Factory;
-
 /**
  * Class SliderPro
  * @package Edofre\SliderPro
@@ -18,7 +16,7 @@ class SliderPro
     public $slides = [];
     /** @var array */
     public $thumbnails = [];
-    
+
     /**
      * @return string
      */
