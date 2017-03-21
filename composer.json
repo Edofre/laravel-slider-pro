@@ -47,6 +47,7 @@
     ],
     "post-update-cmd": [
       "php artisan vendor:publish --tag=slider-/pro"
-    ]
+    ],
+    "test": "phpunit"
   }
 }
