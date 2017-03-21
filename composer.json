@@ -31,6 +31,11 @@
       "Edofre\\SliderPro\\": "src"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "Edofre\\SliderPro\\Test\\": "tests"
+    }
+  },
   "extra": {
     "branch-alias": {
       "dev-master": "1.0.x-dev"
