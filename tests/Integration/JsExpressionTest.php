@@ -9,7 +9,7 @@ namespace Edofre\Fullcalendar\Test\Integration;
 class JsExpressionTest extends \Orchestra\Testbench\TestCase
 {
     /** @test */
-    public function generate_event_with_id()
+    public function generate_js_expression()
     {
         $jsExpressionTest = new \Edofre\SliderPro\JsExpression("
                 function() {
