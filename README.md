@@ -140,7 +140,6 @@ $thumbnails = [
 ### 2. Or you can create your own HTML code to generate the slider
 
 ```php
-<?php
 $slider = new SliderPro();
 $slider->setId('my-slider');
 $slider->setOptions([
@@ -148,13 +147,14 @@ $slider->setOptions([
                 'width'  => 960,
                 'height' => 500,
                 'arrows' => true,
-                'init'   => ("
+                'init'   => new \Edofre\SliderPro\JsExpression("
             function() {
                 console.log('slider is initialized');
             }
         "),
         ]
-]); ?>
+]); 
+?>
 
 <div class="slider-pro" id="my-slider">
     <div class="sp-slides">
