@@ -23,4 +23,20 @@ class JsExpressionTest extends \Orchestra\Testbench\TestCase
                 }
             ", $jsExpressionTest);
     }
+
+    /** @test */
+    public function generate_wrong_js_expression()
+    {
+        $jsExpressionTest = new \Edofre\SliderPro\JsExpression("
+                function() {
+                    cnsl.lo('slider is initialized');
+                }
+            ");
+
+        $this->assertNotEquals("
+                function() {
+                    console.log('slider is initialized');
+                }
+            ", $jsExpressionTest);
+    }
 }
