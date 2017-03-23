@@ -29,6 +29,11 @@ class Thumbnail extends \Edofre\SliderPro\Models\SliderProModel
             $this->htmlOptions['class'] = self::THUMBNAIL_CLASS;
         }
 
-//        return \yii\bootstrap\Html::tag($this->tag, $this->content, $this->htmlOptions);
+        $htmlOptions = " ";
+        foreach ($this->htmlOptions as $option => $value) {
+            $htmlOptions .= $option . '="' . $value . '" ';
+        }
+
+        return '<' . $this->tag . $htmlOptions . '>' . $this->content . '</' . $this->tag . '>';
     }
 }
