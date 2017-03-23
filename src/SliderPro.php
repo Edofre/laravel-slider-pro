@@ -61,8 +61,10 @@ class SliderPro
     private function script()
     {
         return view('slider-pro::script', [
-            'id'      => $this->getId(),
-            'options' => $this->getOptionsJson(),
+            'id'         => $this->getId(),
+            'options'    => $this->getOptionsJson(),
+            'slides'     => $this->slides,
+            'thumbnails' => $this->thumbnails,
         ]);
     }
 
