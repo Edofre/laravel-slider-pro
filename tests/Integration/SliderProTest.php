@@ -30,7 +30,10 @@ class SliderProTest extends TestCase
         ]);
 
         // This looks terrible, I'm sorry...
-        $this->assertEquals("<div id='my-slider'></div><link href=\"/css/slider-pro.css\" rel=\"stylesheet\">
+        $this->assertEquals("<div class=\"slider-pro\" id=\"my-slider\">
+    <div class=\"sp-slides\">
+                    </div>
+</div><link href=\"/css/slider-pro.css\" rel=\"stylesheet\">
 <script type=\"text/javascript\" src=\"/js/slider-pro.js\"></script>
 
 <script type=\"text/javascript\">
@@ -61,7 +64,7 @@ class SliderProTest extends TestCase
                     "),
             ],
         ]);
-
+        
         // This looks terrible, I'm sorry...
         $this->assertEquals("<link href=\"/css/slider-pro.css\" rel=\"stylesheet\">
 <script type=\"text/javascript\" src=\"/js/slider-pro.js\"></script>
