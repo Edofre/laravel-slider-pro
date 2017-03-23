@@ -1,6 +1,13 @@
 Change Log: `laravel-slider-pro`
 ================================
 
+## Version 1.0.0
+
+**Date:** 23-Mar-2017
+
+- First release
+- Added tests
+
 ## Version 0.0.2
 
 **Date:** 18-Dec-2016
