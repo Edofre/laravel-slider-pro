@@ -35,7 +35,11 @@ class SliderPro
      */
     private function sliderPro()
     {
-        return "<div id='" . $this->getId() . "'></div>";
+        return view('slider-pro::slider', [
+            'id'         => $this->getId(),
+            'slides'     => $this->slides,
+            'thumbnails' => $this->thumbnails,
+        ]);
     }
 
     /**
@@ -61,10 +65,8 @@ class SliderPro
     private function script()
     {
         return view('slider-pro::script', [
-            'id'         => $this->getId(),
-            'options'    => $this->getOptionsJson(),
-            'slides'     => $this->slides,
-            'thumbnails' => $this->thumbnails,
+            'id'      => $this->getId(),
+            'options' => $this->getOptionsJson(),
         ]);
     }
 
