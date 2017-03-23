@@ -111,15 +111,15 @@ $slides = [
 ];
 
 $thumbnails = [
-	new \edofre\sliderpro\models\Thumbnail(['tag' => 'img', 'htmlOptions' => ['src' => "/images/ttest.jpg", 'data-src' => "/images/test.jpg"]]),
-	new \edofre\sliderpro\models\Thumbnail(['tag' => 'img', 'htmlOptions' => ['src' => "/images/ttest1.png", 'data-src' => "/images/test1.png"]]),
-	new \edofre\sliderpro\models\Thumbnail(['tag' => 'img', 'htmlOptions' => ['src' => "/images/ttest2.png", 'data-src' => "/images/test2.png"]]),
-	new \edofre\sliderpro\models\Thumbnail(['tag' => 'p', 'content' => 'Thumbnail for video']),
-	new \edofre\sliderpro\models\Thumbnail(['tag' => 'p', 'content' => 'Thumbnail 5']),
+	new \EdoFre\SliderPro\Models\Thumbnail(['tag' => 'img', 'htmlOptions' => ['src' => "/images/ttest.jpg", 'data-src' => "/images/test.jpg"]]),
+	new \EdoFre\SliderPro\Models\Thumbnail(['tag' => 'img', 'htmlOptions' => ['src' => "/images/ttest1.png", 'data-src' => "/images/test1.png"]]),
+	new \EdoFre\SliderPro\Models\Thumbnail(['tag' => 'img', 'htmlOptions' => ['src' => "/images/ttest2.png", 'data-src' => "/images/test2.png"]]),
+	new \EdoFre\SliderPro\Models\Thumbnail(['tag' => 'p', 'content' => 'Thumbnail for video']),
+	new \EdoFre\SliderPro\Models\Thumbnail(['tag' => 'p', 'content' => 'Thumbnail 5']),
 ];
 ?>
 
-<?= \edofre\sliderpro\SliderPro::widget([
+<?= \EdoFre\SliderPro\SliderPro::widget([
 	'id'            => 'my-slider',
 	'slides'        => $slides,
 	'thumbnails'    => $thumbnails,
