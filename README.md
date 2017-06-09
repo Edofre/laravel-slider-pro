@@ -5,6 +5,7 @@
 [![Latest Unstable Version](https://poser.pugx.org/edofre/laravel-slider-pro/v/unstable)](https://packagist.org/packages/edofre/laravel-slider-pro)
 [![License](https://poser.pugx.org/edofre/laravel-slider-pro/license)](https://packagist.org/packages/edofre/laravel-slider-pro)
 [![composer.lock](https://poser.pugx.org/edofre/laravel-slider-pro/composerlock)](https://packagist.org/packages/edofre/laravel-slider-pro)
+[![Build Status](https://travis-ci.org/Edofre/laravel-slider-pro.svg?branch=master)](https://travis-ci.org/Edofre/laravel-slider-pro)
 
 ## Installation
 
@@ -30,7 +31,7 @@ This plugin enables you to download bower packages through composer.
 
 You can install it using this command:
 ```
-composer global require "fxp/composer-asset-plugin:^1.2.0”
+composer global require "fxp/composer-asset-plugin:^1.3.0”
 ```
 
 This will add the fxp composer-asset-plugin and your composer will be able to find and download the required bower-asset/slider-pro package.
@@ -203,4 +204,11 @@ $slider->setOptions([
     </div>
 </div>
 <?= $slider->generate(false); // Specify false so we don't generate a new <div> ?>
+```
+
+## Tests
+
+Run the tests by executing the following command:
+```
+composer test
 ```

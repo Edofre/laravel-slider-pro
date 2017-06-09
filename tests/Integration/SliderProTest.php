@@ -64,7 +64,7 @@ class SliderProTest extends TestCase
                     "),
             ],
         ]);
-        
+
         // This looks terrible, I'm sorry...
         $this->assertEquals("<link href=\"/css/slider-pro.css\" rel=\"stylesheet\">
 <script type=\"text/javascript\" src=\"/js/slider-pro.js\"></script>
