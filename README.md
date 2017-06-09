@@ -31,7 +31,7 @@ This plugin enables you to download bower packages through composer.
 
 You can install it using this command:
 ```
-composer global require "fxp/composer-asset-plugin:^1.2.0”
+composer global require "fxp/composer-asset-plugin:^1.3.0”
 ```
 
 This will add the fxp composer-asset-plugin and your composer will be able to find and download the required bower-asset/slider-pro package.
@@ -204,4 +204,11 @@ $slider->setOptions([
     </div>
 </div>
 <?= $slider->generate(false); // Specify false so we don't generate a new <div> ?>
+```
+
+## Tests
+
+Run the tests by executing the following command:
+```
+composer test
 ```
