@@ -5,6 +5,10 @@ Change Log: `laravel-slider-pro`
 
 **Date:** 23-Apr-2017
 
+- Add .travis integration
+
+**Date:** 23-Apr-2017
+
 - Only require laravel 5.*
 
 ## Version 1.0.0
