@@ -37,5 +37,15 @@
   },
   "scripts": {
     "test": "phpunit"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "EdoFre\\SliderPro\\SliderProServiceProvider"
+      ],
+      "aliases": {
+        "SliderPro": "EdoFre\\SliderPro\\Facades\\SliderPro"
+      }
+    }
   }
 }

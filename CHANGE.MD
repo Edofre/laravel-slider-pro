@@ -1,6 +1,12 @@
 Change Log: `laravel-slider-pro`
 ================================
 
+## Version 1.0.2
+
+**Date:** 17-Jul-2017
+
+- Laravel 5.5 auto discovery
+
 ## Version 1.0.1
 
 **Date:** 23-Apr-2017
