@@ -14,18 +14,18 @@ The preferred way to install this extension is through [composer](http://getcomp
 To install, either run
 
 ```
-$ php composer.phar require edofre/laravel-slider-pro "v1.0.1"
+$ php composer.phar require edofre/laravel-slider-pro "v1.0.2"
 ```
 
 or add
 
 ```
-"edofre/laravel-slider-pro": "v1.0.1"
+"edofre/laravel-slider-pro": "v1.0.2"
 ```
 
 to the ```require``` section of your `composer.json` file.
 
-### Note 
+### Note
 The fxp/composer-asset plugin is required for this package to install properly.
 This plugin enables you to download bower packages through composer.
 
@@ -60,9 +60,9 @@ Publish the assets
 php artisan vendor:publish --tag=slider-\pro
 ```
 
-## Usage 
+## Usage
 
-Not all available modules are available as objects, these will be implemented at a later date, 
+Not all available modules are available as objects, these will be implemented at a later date,
 if you need exact/precise control please use the second method of creating the slider.
 
 The following 2 ways are available to instantiate the slider:
@@ -154,7 +154,7 @@ $slider->setOptions([
             }
         "),
         ]
-]); 
+]);
 ?>
 
 <div class="slider-pro" id="my-slider">
