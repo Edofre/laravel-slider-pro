@@ -14,13 +14,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 To install, either run
 
 ```
-$ php composer.phar require edofre/laravel-slider-pro "v1.0.2"
+$ php composer.phar require edofre/laravel-slider-pro "v1.0.3"
 ```
 
 or add
 
 ```
-"edofre/laravel-slider-pro": "v1.0.2"
+"edofre/laravel-slider-pro": "v1.0.3"
 ```
 
 to the ```require``` section of your `composer.json` file.
@@ -112,15 +112,15 @@ $slides = [
 ];
 
 $thumbnails = [
-	new \EdoFre\SliderPro\Models\Thumbnail(['tag' => 'img', 'htmlOptions' => ['src' => "/images/ttest.jpg", 'data-src' => "/images/test.jpg"]]),
-	new \EdoFre\SliderPro\Models\Thumbnail(['tag' => 'img', 'htmlOptions' => ['src' => "/images/ttest1.png", 'data-src' => "/images/test1.png"]]),
-	new \EdoFre\SliderPro\Models\Thumbnail(['tag' => 'img', 'htmlOptions' => ['src' => "/images/ttest2.png", 'data-src' => "/images/test2.png"]]),
-	new \EdoFre\SliderPro\Models\Thumbnail(['tag' => 'p', 'content' => 'Thumbnail for video']),
-	new \EdoFre\SliderPro\Models\Thumbnail(['tag' => 'p', 'content' => 'Thumbnail 5']),
+	new \Edofre\SliderPro\Models\Thumbnail(['tag' => 'img', 'htmlOptions' => ['src' => "/images/ttest.jpg", 'data-src' => "/images/test.jpg"]]),
+	new \Edofre\SliderPro\Models\Thumbnail(['tag' => 'img', 'htmlOptions' => ['src' => "/images/ttest1.png", 'data-src' => "/images/test1.png"]]),
+	new \Edofre\SliderPro\Models\Thumbnail(['tag' => 'img', 'htmlOptions' => ['src' => "/images/ttest2.png", 'data-src' => "/images/test2.png"]]),
+	new \Edofre\SliderPro\Models\Thumbnail(['tag' => 'p', 'content' => 'Thumbnail for video']),
+	new \Edofre\SliderPro\Models\Thumbnail(['tag' => 'p', 'content' => 'Thumbnail 5']),
 ];
 ?>
 
-<?= \EdoFre\SliderPro\SliderPro::widget([
+<?= \Edofre\SliderPro\SliderPro::widget([
 	'id'            => 'my-slider',
 	'slides'        => $slides,
 	'thumbnails'    => $thumbnails,

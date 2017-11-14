@@ -1,6 +1,12 @@
 Change Log: `laravel-slider-pro`
 ================================
 
+## Version 1.0.3
+
+**Date:** 14-Nov-2017
+
+- Fix namespace capitalizing error
+
 ## Version 1.0.2
 
 **Date:** 17-Jul-2017
