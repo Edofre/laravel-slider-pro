@@ -41,10 +41,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "EdoFre\\SliderPro\\SliderProServiceProvider"
+        "Edofre\\SliderPro\\SliderProServiceProvider"
       ],
       "aliases": {
-        "SliderPro": "EdoFre\\SliderPro\\Facades\\SliderPro"
+        "SliderPro": "Edofre\\SliderPro\\Facades\\SliderPro"
       }
     }
   }
