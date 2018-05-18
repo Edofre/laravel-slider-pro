@@ -1,6 +1,12 @@
 Change Log: `laravel-slider-pro`
 ================================
 
+## Version 1.0.4
+
+**Date:** 18-May-2018
+
+- Fix proper slider-pro version
+
 ## Version 1.0.3
 
 **Date:** 14-Nov-2017
