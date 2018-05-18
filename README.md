@@ -14,13 +14,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 To install, either run
 
 ```
-$ php composer.phar require edofre/laravel-slider-pro "v1.0.3"
+$ php composer.phar require edofre/laravel-slider-pro "v1.0.4"
 ```
 
 or add
 
 ```
-"edofre/laravel-slider-pro": "v1.0.3"
+"edofre/laravel-slider-pro": "v1.0.4"
 ```
 
 to the ```require``` section of your `composer.json` file.
